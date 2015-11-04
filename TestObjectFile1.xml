@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0_65" class="java.beans.XMLDecoder">
- <object class="TestObject"/>
+ <object class="TestObject1">
+  <void property="name">
+   <string>test2</string>
+  </void>
+ </object>
 </java>
