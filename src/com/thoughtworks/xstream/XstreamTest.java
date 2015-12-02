@@ -23,4 +23,8 @@ public class XstreamTest {
 	public String getDescription(){
 		return description;
 	}
+	
+	public String toString(){
+		return name + description;
+	}
 }

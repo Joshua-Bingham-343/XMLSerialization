@@ -1,4 +1,6 @@
+import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 
@@ -94,6 +96,8 @@ public class TestObject {
 		BufferedOutputStream write = new BufferedOutputStream(new FileOutputStream("TestObjectFile2.xml"));
 		XStream xstream = new XStream();
 		xstream.toXML(test3,write);
+		XstreamTest test3Recall = (XstreamTest) xstream.fromXML(new BufferedInputStream(new FileInputStream("TestObjectFile2.xml")));
+		System.out.println(test3Recall);
 	}
 
 }
